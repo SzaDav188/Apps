@@ -21,4 +21,4 @@ spec:
           service:
             name: argocd-server
             port:
-              number: 443  # ha --insecure-rel fut az argocd-server
+              number: 80  # ha --insecure-rel fut az argocd-server
