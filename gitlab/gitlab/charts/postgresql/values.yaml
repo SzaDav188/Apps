@@ -13,9 +13,9 @@ global:
 ## ref: https://hub.docker.com/r/bitnami/postgresql/tags/
 ##
 image:
-  registry: hub.docker.com
-  repository: hub.docker.com/_postgres
-  tag: postgres:16
+  registry: docker.io
+  repository: bitnami/postgres
+  tag: 16-bookworm
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
