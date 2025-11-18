@@ -33,7 +33,7 @@ global:
 
   ## GitLab operator is DEPRECATED. DO NOT USE.
   operator:
-    enabled: false
+    enabled: true
     rollout:
       autoPause: true
 
@@ -42,7 +42,7 @@ global:
     labels: {}
 
   ## https://docs.gitlab.com/charts/installation/deployment#deploy-the-community-edition
-  edition: ee
+  edition: ce
 
   ## https://docs.gitlab.com/charts/charts/globals#gitlab-version
   # gitlabVersion:
@@ -54,7 +54,7 @@ global:
     allowClusterRoles: true
   ## https://docs.gitlab.com/charts/charts/globals#configure-host-settings
   hosts:
-    domain: example.com
+    domain: test.com
     hostSuffix:
     https: true
     externalIP:
@@ -699,10 +699,10 @@ upgradeCheck:
       cpu: 50m
 
 ## Settings to for the Let's Encrypt ACME Issuer
-# certmanager-issuer:
+certmanager-issuer:
 #   # The email address to register certificates requested from Let's Encrypt.
 #   # Required if using Let's Encrypt.
-#   email: email@example.com
+  email: test@example.com
 
 ## Installation & configuration of jetstack/cert-manager
 ## See requirements.yaml for current version
