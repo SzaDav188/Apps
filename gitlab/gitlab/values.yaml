@@ -33,7 +33,7 @@ global:
 
   ## GitLab operator is DEPRECATED. DO NOT USE.
   operator:
-    enabled: true
+    enabled: false
     rollout:
       autoPause: true
 
