@@ -919,7 +919,7 @@ postgresql:
   install: true
   postgresqlDatabase: gitlabhq_production
   image:
-    tag: 12.7.0
+    tag: postgres:16
   usePasswordFile: true
   existingSecret: 'bogus'
   initdbScriptsConfigMap: 'bogus'
