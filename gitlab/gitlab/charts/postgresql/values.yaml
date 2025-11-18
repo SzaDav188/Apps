@@ -15,7 +15,7 @@ global:
 image:
   registry: docker.io
   repository: bitnami/postgresql
-  tag: 16-bookworm
+  tag: sha256:54e5e67a7cf4dd4df13b9f8da7bb62ca0995542f4d8d6805fa1d5933e8aa5490
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
