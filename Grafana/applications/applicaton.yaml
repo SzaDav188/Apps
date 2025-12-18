@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gitlab
+  namespace: grafana
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/SzaDav188/Apps.git
+    targetRevision: HEAD
+    path: grafana
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: grafana
